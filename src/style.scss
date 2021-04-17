@@ -61,14 +61,70 @@ $light-background: #edf6ff;
 }
 
 .modal {
-  margin-top: -18vh;
-  transform: translate(0vw, 18vh);
+  margin-top: -30vh;
+  transform: translate(0vw, 30vh);
   width: 40vw;
   background-color: white;
-  height: 30vh;
+  height: auto;
+  min-height: 30vh;
   border-radius: 20px;
-  padding: 20px;
+  padding: 1rem 2rem;
   box-shadow: 0px 30px 36px #557da526;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  &-title {
+    font-weight: 400;
+  }
+  &-each {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    &-title {
+      font-size: 14px;
+      padding: 1rem 0rem;
+    }
+    &-input {
+      background-color: #e8e8e833;
+      border-radius: 0.3rem;
+      padding: 1rem;
+      border: 0.1rem solid #43afff;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &-error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    &-title {
+      color: red;
+    }
+  }
+
+  &-button {
+    margin: 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 3rem;
+    font-weight: 700;
+    color: white;
+    background-color: $light-blue;
+    border: 0.2rem solid $light-blue;
+    border-radius: 5px;
+  }
 }
 
 .button {
