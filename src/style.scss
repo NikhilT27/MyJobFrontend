@@ -1,0 +1,103 @@
+$light-blue: #43afff;
+$header-color: #303f60;
+$light-background: #edf6ff;
+
+.main {
+  background-color: $header-color;
+  &-content {
+    padding: 0rem 9rem;
+  }
+
+  &-dark {
+    width: 100vw;
+    height: 20vh;
+    background-color: $header-color;
+  }
+
+  &-light {
+    height: 65vh;
+    width: 100vw;
+    background-color: $light-background;
+  }
+}
+
+.intro {
+  &-greeting {
+    padding: 3rem 0rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  //   width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 3rem;
+  background-color: $header-color;
+  border-bottom: 0.2rem solid #4d618e;
+  &-button {
+    font-weight: 600;
+    color: white;
+    background-color: #43afff33;
+    border-radius: 5px;
+    border: 0.1rem solid #43afff;
+  }
+}
+
+.login {
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.modal {
+  margin-top: -18vh;
+  transform: translate(0vw, 18vh);
+  width: 40vw;
+  background-color: white;
+  height: 30vh;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 30px 36px #557da526;
+}
+
+.button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.light-blue {
+  color: $light-blue;
+}
+
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light-button {
+  font-weight: 700;
+  color: white;
+  background-color: $light-blue;
+  border: 0.2rem solid $light-blue;
+  border-radius: 5px;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
